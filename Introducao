@@ -1,0 +1,21 @@
+fun main (args: Array<String>){
+
+
+    // list
+    val l1 = listOf("Madri", "São Paulo", "Berlin") // imutavel
+    val l2 = mutableListOf("Madri", "São Paulo", "Berlin") // mutavel
+    arrayListOf("Madri", "São Paulo", "Berlin") // não possui um mutable, já faz tudo, herdado do java
+
+    // set
+    val s1 = setOf("Madri", "São Paulo", "Berlin") // imutavel e não permite que dados repetidos sem colocados
+    val s2 = mutableSetOf("Madri", "São Paulo", "Berlin") //mutavel e não permite que dados repetidos sem colocados
+
+    // hashmap
+
+    val h1 = hashMapOf<String, String>(Pair("key", "value" ), Pair("França", "Paris" )) // usa chave e valor para acesso
+    // é mutavel e herda do java
+    println(h1.entries)
+   println(h1["França"]) // vai retorna o valor
+   
+   
+}
